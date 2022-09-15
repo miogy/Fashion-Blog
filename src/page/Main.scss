@@ -1,6 +1,10 @@
 .main-container{
   width: 100%;
   margin: 0 auto;
-  .main-slider{
+  .center-margin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
   }
 }
