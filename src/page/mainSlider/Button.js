@@ -6,7 +6,7 @@ function Button({moveSlide, direction}){
   return(
       <button 
       onClick={moveSlide}
-      className={direction === "next" ? "btn-slide next" : "btn-slide prev"}
+      className={direction === "next" ? "next" : "prev"}
       >{direction === "next" ? <IoIosArrowForward /> : <IoIosArrowBack />}</button>
   )
 }

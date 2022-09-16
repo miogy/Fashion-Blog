@@ -37,13 +37,13 @@ function Slide(){
 
   return (
     <div className="slide-container">
-      <div className="slide-show">
       {dataSlider.map((slide, index)=>{
         return <div key={slide.id} 
         className={slideIndex === index + 1 ? "slide active-animation" : "slide"}>
           <img 
           className="slide-img"
           src={process.env.PUBLIC_URL + `/imgs/img${index +1}.jpg`} alt="mainImg"/> 
+          <span className="slide-title">{slide.title}</span>
         </div>
       })}
       <Button 
@@ -61,7 +61,6 @@ function Slide(){
           className={slideIndex === index +1 ? "dot active" : "dot"}></div>
         ))}
       </div>
-    </div>
     </div>
   )
 }
