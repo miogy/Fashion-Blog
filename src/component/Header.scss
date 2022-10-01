@@ -1,4 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
+@mixin text {
+  list-style: none;
+  text-decoration: none;
+}
 
 .nav-container{
   padding-left: 10%;

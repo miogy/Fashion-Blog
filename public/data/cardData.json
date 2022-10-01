@@ -1,0 +1,10 @@
+{
+  "cardData" : [
+    {
+      "id" : 0,
+      "imgUrl" : "/public/imgs/c01.png",
+      "title" : "product/01",
+      "text" : "custom item"
+    }
+  ]
+}
