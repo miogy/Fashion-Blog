@@ -1,79 +1,85 @@
-.slide-container{
-  width: 90%;
+.slide-container {
+  width: 100%;
   height: 600px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  .slide{
+  .slide {
     width: 100%;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     opacity: 0; //animation
     transition: opacity ease-in-out 0.4s; // animation
-    .slide-img{
+    .slide-img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-    .slide-title{
+    .slide-title {
       position: absolute;
-      top: 250px; left: 25%;
+      top: 250px;
+      left: 25%;
       font-size: 80px;
       font-weight: 600;
       color: #fff;
       z-index: 200;
     }
   }
-  .active-animation{
+  .active-animation {
     opacity: 1;
   }
-  .prev{
+  .prev {
     font-size: 80px;
     padding-right: 30%;
     padding-top: 15%;
     padding-bottom: 10%;
     position: absolute;
-    top: 0; left: 5%;
+    top: 0;
+    left: 5%;
     z-index: 100;
     background-color: rgba($color: #333, $alpha: 0); //hover효과 background
     border: none;
     // background-color: aquamarine;
     opacity: 0;
   }
-  &:hover .prev{
+  &:hover .prev {
     opacity: 0.7;
   }
-  .next{
+  .next {
     font-size: 80px;
     padding-left: 30%;
     padding-top: 15%;
     padding-bottom: 10%;
     position: absolute;
-    top: 0; right: 5%;
+    top: 0;
+    right: 5%;
     z-index: 100;
     background-color: rgba($color: #333, $alpha: 0); //hover효과 background
     border: none;
     opacity: 0;
   }
-  &:hover .next{
+  &:hover .next {
     opacity: 0.7;
   }
-  .slide-dot{
+  .slide-dot {
     position: absolute;
-    bottom: 50px; right: 10%;
+    bottom: 50px;
+    right: 10%;
     display: flex;
-    z-index: 100;  
-    .dot{
-      width: 15px; height: 15px;
+    z-index: 100;
+    .dot {
+      width: 15px;
+      height: 15px;
       margin: 5px;
       background-color: rgba($color: #333, $alpha: 0.8);
     }
-    .active{
-      width: 15px; height: 15px;
+    .active {
+      width: 15px;
+      height: 15px;
       margin: 5px;
       border: 2px solid #fff;
       background-color: rgba($color: #fff, $alpha: 0.2);
     }
   }
 }
-

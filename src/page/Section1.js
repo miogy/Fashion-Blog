@@ -1,8 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import styled from "styled-components";
+import FirstPattern from "./FirstPattern";
+import MainImg from "./MainImg";
 
+const Container = styled.div`
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+`;
+
+const ContentWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 function Section1() {
-  const [cardArr, setCardArr] = useState([]);
-
   useEffect(() => {
     fetch("/data/cardData.json")
       .then((res) => res.json())
@@ -10,23 +23,12 @@ function Section1() {
   });
 
   return (
-    <div className="section1-container">
-      <h3>New Design</h3>
-      <Card />
-    </div>
-  );
-}
-
-function Card() {
-  return (
-    <div className="new-card">
-      <div className="new-card-container">
-        <dl className="new-card-show">
-          <dt>디자인 이미지</dt>
-          <dd>디자인 설명</dd>
-        </dl>
-      </div>
-    </div>
+    <Container>
+      <ContentWrap>
+        <MainImg />
+        <FirstPattern />
+      </ContentWrap>
+    </Container>
   );
 }
 export default Section1;

@@ -1,21 +1,18 @@
-.section1-container{
-  width: 100%;
-  margin: 0 auto;
-  h3{
+.section1-container {
+  .new-card {
     width: 100%;
     margin: 0 auto;
-  }
-  .new-card{
-    width: 100%;
-    margin: 0 auto;
-    .new-card-container{
-      width: 400px; height: 600px;
+    .new-card-container {
+      width: 400px;
+      height: 600px;
       border: 1px solid lightgray;
       display: flex;
       justify-content: center;
-      .new-card-show{
-        dt{}
-        dd{}
+      .new-card-show {
+        dt {
+        }
+        dd {
+        }
       }
     }
   }

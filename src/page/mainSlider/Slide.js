@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
-import "./Slide.scss";
+// import "./Slide.scss";
 import dataSlider from "./dataSlider";
 
 function Slide() {
