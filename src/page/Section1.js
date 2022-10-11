@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import styled from "styled-components";
-import FirstPattern from "./FirstPattern";
+import FirstSection from "./FirstSection";
 import MainImg from "./MainImg";
 
 const Container = styled.div`
@@ -26,7 +26,7 @@ function Section1() {
     <Container>
       <ContentWrap>
         <MainImg />
-        <FirstPattern />
+        <FirstSection />
       </ContentWrap>
     </Container>
   );
